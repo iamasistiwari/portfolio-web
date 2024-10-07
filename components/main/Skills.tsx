@@ -7,13 +7,13 @@ import SkillText from '../sub/SkillText'
 export default function Skills() {
   return (
     <section 
-    className='flex flex-col items-center justify-center gap-3 h-full overflow-hidden py-20' 
+    className='flex flex-col items-center justify-center gap-3 h-full overflow-hidden py-20 mt-80 lg:mt-10' 
     id='skills'
     style={{transform: "scale(0.9)"}}
     >
         <SkillText />
         
-        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-4 lg:gap-5 items-center'>
             {Frontend_skill.map((image, index) => (
                 <SkillsDataProvider
                     key={index}
@@ -24,7 +24,7 @@ export default function Skills() {
                 />
             ))}
         </div>
-        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-4 lg:gap-5 items-center'>
             {Backend_skill.map((image, index) => (
                 <SkillsDataProvider
                     key={index}
@@ -35,7 +35,7 @@ export default function Skills() {
                 />
             ))}
         </div>
-        <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
+        <div className='flex flex-row justify-around flex-wrap mt-4 gap-4 lg:gap-5 items-center'>
             {Full_stack.map((image, index) => (
                 <SkillsDataProvider
                     key={index}

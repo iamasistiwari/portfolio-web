@@ -9,7 +9,7 @@ export default function HeroContent() {
     <motion.div
     initial="hidden"
     animate="visible"
-    className='flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]'
+    className='flex flex-row items-center justify-center px-8 lg:px-20 mt-40 w-full z-[20]'
     >
         <div className='h-full w-full flex flex-col justify-center gap-5 m-auto text-start'>
             <motion.div 
@@ -21,7 +21,7 @@ export default function HeroContent() {
             
             <motion.div
             variants={slideInFromLeft(0.5)}
-            className='flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto'
+            className='flex flex-col gap-6 mt-6 text-3xl lg:text-6xl text-bold text-white max-w-[600px] w-auto h-auto'
             >
                 <span>
                     Providing 
@@ -30,7 +30,7 @@ export default function HeroContent() {
                 </span>
                 <motion.p
                 variants={slideInFromLeft(0.8)}
-                className='text-lg text-gray-400 my-5 max-w-[600px] w-auto h-auto'
+                className='text-sm lg:text-lg text-gray-400 my-5 max-w-[200px] lg:max-w-[600px] lg:w-auto h-auto'
                 >
                     I&apos;m a Full Stack Software Engineer,
                     Check out my project and skills 
@@ -38,10 +38,18 @@ export default function HeroContent() {
             </motion.div>
         </div>
         <motion.div
-        variants={slideInFromRight(0.8)}
-        className='flex w-full h-full justify-center items-center'
+        variants={slideInFromTop}
+        className='flex lg:hidden h-full justify-center items-center absolute top-[450px] lg:relative lg:top-0'
         >
-            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} />
+            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} className='hidden lg:block'/>
+            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} className='size-96 block md:hidden'/>
+
+        </motion.div>
+        <motion.div
+        variants={slideInFromRight(0.8)}
+        className='hidden md:block w-full max-w-full h-full justify-center items-center'
+        >
+            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} className='hidden lg:block'/>
 
         </motion.div>
     </motion.div>
