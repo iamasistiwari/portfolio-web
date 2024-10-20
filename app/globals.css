@@ -56,7 +56,6 @@
   box-shadow: inset 0 0 12px #bf97ff70;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hidden {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

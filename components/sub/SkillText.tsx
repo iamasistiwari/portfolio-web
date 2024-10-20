@@ -16,15 +16,9 @@ export default function SkillText() {
         </motion.div>
         <motion.div
         variants={slideInFromLeft(0.5)}
-        className='text-[25px] lg:text-[35px] text-white font-medium mt-[10px] text-center mb-[15px]'
+        className='text-[25px] lg:text-[35px] text-white font-medium mt-[10px] text-center mb-[15px] tracking-wide'
         >
             Making apps with modern technologies
-        </motion.div>
-        <motion.div
-        variants={slideInFromLeft(0.5)}
-        className='text-[20px] cursive text-gray-200 mt-[10px] text-center mb-10'
-        >
-            Never miss a task deadline or idea
         </motion.div>
     </div>
   )

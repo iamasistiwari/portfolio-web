@@ -12,16 +12,15 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg lg:p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center lg:m-auto">
-            <div className="w-[400px] lg:w-full h-full grid grid-cols-2 items-center justify-around lg:flex lg:flex-row lg:flex-wrap">
+    <div className=" w-full h-full bg-transparent text-gray-200 shadow-lg lg:p-[15px] ">
+        <div className="flex flex-col items-center justify-center">
+            <div className="grid grid-cols-2 items-center justify-around lg:flex lg:flex-row lg:flex-wrap xl:gap-36">
                 
-
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+                <div className="h-auto flex flex-col items-center justify-start mx-10 lg:mx-0">
                     <div className="font-bold text-[16px]">Community</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                         <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
+                        <span className="text-[15px]">Youtube</span>    
                     </p>
                     <p onClick={() => window.open("https://github.com/iamasistiwari")} className="flex flex-row items-center my-[15px] cursor-pointer">
                         <RxGithubLogo />
@@ -29,10 +28,10 @@ const Footer = () => {
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                         <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
+                        <span className="text-[15px]">Discord</span>    
                     </p>
                 </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+                <div className="h-auto flex flex-col items-center justify-start pr-4 lg:pr-0">
                     <div className="font-bold text-[16px]">Social Media</div>
                     <div onClick={() => window.open("https://www.instagram.com/iamasistiwari/")} className="text-white">
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
