@@ -20,7 +20,7 @@ export default function HeroContent() {
                 </span>
                 <motion.p
                 variants={slideInFromLeft(0.8)}
-                className='text-sm items-center justify-center text-center w-full lg:text-lg text-gray-400 my-5 h-auto'
+                className='text-sm items-center justify-center text-center w-full lg:text-lg text-neutral-600 my-5 h-auto'
                 >
                     I&apos;m a student with an interest in Full Stack Developer and Blockchain Technology. Currently, I am focused on developing my skills through building real world projects
                 </motion.p>
@@ -28,16 +28,16 @@ export default function HeroContent() {
         </div>
         <motion.div
         variants={slideInFromTop}
-        className='absolute lg:hidden h-full justify-center items-center  top-[470px] lg:relative lg:top-0'
+        className='absolute lg:hidden  h-full justify-center items-center  top-[470px] lg:relative lg:top-0'
         >
-            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} className=''/>
+            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} className='opacity-75' />
 
         </motion.div>
         <motion.div
         variants={slideInFromRight(0.8)}
-        className='hidden md:block w-full max-w-full h-full justify-center items-center'
+        className='hidden md:block w-full max-w-full h-full justify-center items-center '
         >
-            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} className='hidden lg:block'/>
+            <Image src="/mainIconsdark.svg" alt="work icons" height={650}width={650} className='hidden lg:block opacity-50'/>
         </motion.div>
     </motion.div>
   )
