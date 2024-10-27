@@ -1,0 +1,14 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // Replace 'rule-name' with the ESLint rule you want to disable
+    "rule-name": "off",
+    "react/react-in-jsx-scope": "off" // Example: Disable rule for React 17+
+  },
+  "settings": {
+    "next": {
+      "rootDir": "."
+    }
+  }
+}
+

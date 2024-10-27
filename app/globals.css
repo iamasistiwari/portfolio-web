@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.rounded-image{
+  border-radius: 24px;
+  border-width: 2px;
+}
+
+.wave {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;      
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;   
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+.textStack {
+  font-size: 12px;
+  line-height: 110%;
+  opacity: 50%;
+}
+html, body {
+  overflow: auto;  /* Enable scrolling */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
+
