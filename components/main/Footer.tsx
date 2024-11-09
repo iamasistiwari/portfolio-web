@@ -12,8 +12,8 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" w-full h-full bg-transparent text-gray-200 shadow-lg lg:p-[15px] mt-32">
-        <div className="flex flex-col items-center justify-center">
+    <div className=" w-full h-full bg-transparent text-gray-200 shadow-lg lg:p-[15px] mt-32 ">
+        <div className="flex flex-col items-center justify-center ">
             <div className="grid grid-cols-2 items-center justify-around lg:flex lg:flex-row lg:flex-wrap xl:gap-36">
                 
                 <div className="h-auto flex flex-col items-center justify-start mx-10 lg:mx-0">
@@ -55,7 +55,7 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="min-w-[200px] min-h-[175px] flex-col items-center justify-start hidden lg:flex">
+                <div className="min-w-[200px] min-h-[175px] mb-[73px] flex-col items-center justify-start hidden lg:flex">
                     <div className="font-bold text-[16px]">Contact Details</div>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                         <span className="text-[15px] ml-[6px]">iamashishtiwari2004@gmail.com</span>    

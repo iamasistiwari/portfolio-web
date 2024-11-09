@@ -1,17 +1,28 @@
-import { RiNextjsFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaDocker } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
+import { FaAws, FaCloudflare, FaDocker, FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa6";
-import { SiPostgresql } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { FaAws } from "react-icons/fa";
-import { SiRecoil } from "react-icons/si";
-import { FaCloudflare } from "react-icons/fa";
-import { TbBrandFramerMotion } from "react-icons/tb";
-import { TbBrandReactNative } from "react-icons/tb";
-import { SiMongoose } from "react-icons/si";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress, SiMongoose, SiPostgresql, SiRecoil, SiTypescript } from "react-icons/si";
+import { TbBrandFramerMotion, TbBrandReactNative } from "react-icons/tb";
+
+export const fadeInAnimationVarients = {
+    initial: {
+      opacity: 0,
+      y: 100
+    },
+    animate:(index:number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05*index,
+        duration: 0.7,
+      }
+    })
+}
+
+
+  
+
+
 
 export const Frontend_skill = [
     {
@@ -94,13 +105,37 @@ export const Full_stack = [
 
 export const ProjectsList = [
     {
-        title: "Medium Website Cloned",
-        description: "It is medium website clone this is my first ever project.",
-        icon: '/medium.png'
+        title: "Space -Write your blogs",
+        description: "Medium-inspired blogging platform with a clean, minimalist design.",
+        icon: '/space-website.png',
+        detailedDescription: 'Space is a Medium-inspired blogging platform where users can create, delete, and browse blogs. Built with React and Tailwind CSS for the frontend, it uses Recoil for state management of posts, Express.js for the backend, MongoDB for the database, and JWT tokens for secure authentication. It offers a clean and user-friendly experience for content creation and exploration.',
+        photos: '/space-website-1.png',
+        techStacks: ['TypeScript', 'React', 'Recoil', 'Tailwind', 'Express', 'MongoDB'],
+        hosted: 'Vercel',
+        hostLink: 'https://space.ashishtiwari.net',
+        githubLink: 'https://github.com/iamasistiwari/blog-website'
     },
     {
-        title: "Vice ChatBot Website",
-        description: "This is the website of vice chatbot.",
-        icon: '/vice-website.png'
+        title: "Vice -AI ChatBot",
+        description: "Chatbot.",
+        icon: '/vice-website.png',
+        detailedDescription: "",
+        photos: '',
+        techStacks: ['Turborepo', 'TypeScript', 'Nextjs-14', 'Tailwind', 'Postgres', 'Python', 'Flask'],
+        hosted: 'Vercel',
+        hostLink: 'https://moodlog.ashishtiwari.net',
+        githubLink: 'https://github.com/iamasistiwari/vice-website'
     },
+    {
+        title: "Moodlog -Mood tracking website",
+        description: "helps user to track their moods every day of every year.",
+        icon: '/moodlog-website.png',
+        detailedDescription: "Mood-Log is a web app that allows users to track their daily moods throughout the year. Built with Next.js and TypeScript, it features secure authentication via NextAuth and uses PostgreSQL for data storage. Users can log their mood each day, view entries on an interactive calendar, and analyze mood patterns over time. The app provides a simple yet effective way to monitor emotional well-being, helping users gain insights into their mental health.",
+        photos: '/moodlog-website-1.png',
+        techStacks: ['TypeScript', 'Nextjs', 'Tailwind', 'Postgres'],
+        hosted: 'Vercel',
+        hostLink: 'https://moodlog.ashishtiwari.net',
+        githubLink: 'https://github.com/iamasistiwari/mood-log'
+    },
+
 ];

@@ -5,12 +5,10 @@ import HeroContent from '../sub/HeroContent'
 
 export default function Hero() {
   return (
-    <div className=''>
+    <div>
       <div className='mt-24'>
         <HeroContent />
-
       </div>
-      
     </div>
   )
 }

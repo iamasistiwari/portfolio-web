@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Space_Grotesk } from 'next/font/google';
 import Navbar from "@/components/main/Navbar";
-import Footer from "@/components/main/Footer";
-import Sidebar from "@/components/main/Sidebar";
 
 
 
@@ -30,10 +28,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${spaceGrotesk.className} text-white bg-black antialiased`}>
-          <Sidebar />
           <Navbar />
           {children}
-          <Footer />
       </body>
     </html>
   );

@@ -11,7 +11,7 @@ export default function Sidebar() {
 
 function LeftSidebar() {
   return (
-    <div className='hidden xl:block fixed pl-40 left-0 h-screen'>
+    <div className='hidden xl:block fixed w-72 top-0 left-0 h-screen'>
       <div className='h-screen absolute top-20 border-r border-neutral-900 w-full'>
         
       </div>
@@ -20,9 +20,9 @@ function LeftSidebar() {
 }
 function RightSidebar() {
   return (
-    <div className='hidden xl:block fixed pr-40 right-0 h-screen'>
+    <div className='hidden xl:block fixed w-72 top-0 right-0 h-screen'>
       <div className='h-full border-l border-neutral-900'>
-        Right fiabdf
+        
       </div>
     </div>
   )
