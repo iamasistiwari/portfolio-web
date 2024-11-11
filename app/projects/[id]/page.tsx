@@ -4,8 +4,22 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-export default function Page({ params }: {params : { id: string}}) {
-  const { id } = params
+interface ProjectPageProps {
+  params: {
+    id: string
+  }
+}
+
+export async function generateStaticParams(){
+  return ProjectsList.map((_, index) => ({
+    id: index.toString()
+  }))
+}
+
+
+export default function Page({ params }: ProjectPageProps) {
+  const  id  = params.id;
+  
   return (
     <div className='text-white mt-24 flex flex-col mb-20'>
       <div className='p-2 lg:px-20 flex flex-col justify-center items-center'>

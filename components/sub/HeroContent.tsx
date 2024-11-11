@@ -13,6 +13,7 @@ export default function HeroContent() {
                 src={'/profileIcon.jpg'}
                 alt='dp'
                 fill
+                priority
                 />
             </div>
             <div className='text-sm lg:text-xl text-center lg:text-justify lg:pl-7 lg:pt-8 hidden lg:block'>
