@@ -26,8 +26,8 @@ export default function Page({ params }: ProjectPageProps) {
           <Image
           src={ProjectsList[Number(id)].icon}
           alt='project-image '
-          width={1440}
-          height={600}
+          width={700}
+          height={700}
           className='border border-neutral-900 rounded-2xl'
           />
       </div>
@@ -40,7 +40,7 @@ export default function Page({ params }: ProjectPageProps) {
         {ProjectsList[Number(id)].detailedDescription}
       </div>
 
-      <div className='flex flex-col px-3 lg:px-20 gap-y-3 mt-16 opacity-65'>
+      <div className='flex flex-col lg:flex-row px-3 lg:px-20 gap-3 mt-16 opacity-75'>
         <Link href={ProjectsList[Number(id)].githubLink} target="_blank" rel="noopener noreferrer" className='text-xl lg:text-2xl border border-neutral-900 p-3 rounded-xl bg-neutral-950 text-center'>SOURCE CODE</Link>
         <Link href={ProjectsList[Number(id)].hostLink} target="_blank" rel="noopener noreferrer" className='text-xl lg:text-2xl border border-neutral-900 p-3 rounded-xl bg-neutral-950 text-center'>WEBSITE</Link>
       </div>
@@ -49,15 +49,15 @@ export default function Page({ params }: ProjectPageProps) {
           <Image
           src={ProjectsList[Number(id)].photos}
           alt='project-image '
-          width={1440}
-          height={600}
+          width={700}
+          height={700}
           className='border border-neutral-900 rounded-2xl'
           />
       </div>
 
       <div className='flex text-xl lg:text-2xl px-3 lg:px-20 justify-center items-center mt-10'>
         <div className='text-start'>
-          <h1 className='font-bold text-[22px] lg:text-[28px]'>TECH STACK USED</h1>
+          <h1 className='font-bold text-[22px] lg:text-[28px] mb-4'>TECH STACK USED</h1>
           {ProjectsList[Number(id)].techStacks.map((val, index) => {
             return <h1 key={index} className='text-sm lg:text-lg w-auto my-2 font-thin border border-neutral-900 p-2 text-center uppercase bg-neutral-950 rounded-2xl'>{val}</h1>
           })}

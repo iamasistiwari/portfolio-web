@@ -18,7 +18,7 @@ export default function page() {
           <div className='mt-2 opacity-90'>Projects</div>
           <MyProjects />
       </div>
-      <div>
+      <div className='lg:px-72 mt-72'>
         <Footer />
       </div>
     </div>
