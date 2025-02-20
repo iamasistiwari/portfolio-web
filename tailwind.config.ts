@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		scrollBehavior: {
+        	smooth: 'smooth',
+      	},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

@@ -13,7 +13,6 @@ function LeftSidebar() {
   return (
     <div className='hidden xl:block fixed w-72 top-0 left-0 h-screen'>
       <div className='h-screen absolute top-20 border-r border-neutral-900 w-full'>
-        
       </div>
     </div>
   )

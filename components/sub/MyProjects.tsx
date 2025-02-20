@@ -25,7 +25,7 @@ export default function MyProjects() {
         custom={index }
         className="relative overflow-hidden shadow-lg border border-neutral-900 max-w-72 lg:max-w-[620px] rounded-xl mt-4 cursor-pointer hover:bg-neutral-950">
             <Image
-            src={project.icon}
+            src={project.icon[0]}
             alt={project.title || ''}
             width={1000}
             height={1000}
