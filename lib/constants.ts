@@ -30,7 +30,7 @@ export const ProjectsList: ProjectsList[] = [
     },
 
     {
-        title: "Playfi– Real-Time Collaborative Music Player PC-ONLY",
+        title: "Playfi– Real-Time Collaborative Music Player",
         description: "realtime music room app where audience decide to play music..",
         icon: ['/pf1.png', '/pf2.png'],
         detailedDescription: "This app allows you to create a room where your audience can join, add songs to a playlist, and vote on them. The top-voted song plays automatically, while only the admin has control over manually changing or playing songs.",
