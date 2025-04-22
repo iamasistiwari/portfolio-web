@@ -3,7 +3,7 @@ import React from 'react'
 export default function Sidebar() {
   return (
     <div>
-      <LeftSidebar/>
+      <LeftSidebar />
       <RightSidebar />
     </div>
   )
@@ -21,7 +21,6 @@ function RightSidebar() {
   return (
     <div className='hidden xl:block fixed w-72 top-0 right-0 h-screen'>
       <div className='h-full border-l border-neutral-900'>
-        
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} text-white bg-black antialiased`}
+        className={`${spaceGrotesk.className} text-white bg-black antialiased scroll-smooth`}
       >
         <Navbar />
         {children}
