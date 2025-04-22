@@ -123,7 +123,7 @@ export const ProjectsList = [
     // },
 
     {
-        title: "Trufake- deepfake detector",
+        title: "Trufake- deepfake detector PC-ONLY",
         description: "detects whether the user uploaded video is deepfake or not.",
         icon: ['/tf1.png', '/tf2.png'],
         detailedDescription: "app lets you detects whether the uploaded video is deepfake or not using model bulit from scratch build on top of pretrained model of huggingFace an request is sent to the model with videoUrl using FastApi and model downloads the video runs the model and send the response to the user.",
@@ -135,7 +135,7 @@ export const ProjectsList = [
     },
 
     {
-        title: "Playfi– Real-Time Collaborative Music Player",
+        title: "Playfi– Real-Time Collaborative Music Player PC-ONLY",
         description: "realtime music room app where audience decide to play music..",
         icon: ['/pf1.png', '/pf2.png'],
         detailedDescription: "This app allows you to create a room where your audience can join, add songs to a playlist, and vote on them. The top-voted song plays automatically, while only the admin has control over manually changing or playing songs.",
